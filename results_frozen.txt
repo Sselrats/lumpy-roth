@@ -1,0 +1,75 @@
+policy                          estate@90 (real $)    vs no-conv
+1. no conversion                         4,689,159            +0
+2. fill 12% bracket                      5,040,823      +351,663
+3. fill 24% bracket                      4,338,429      -350,730
+4. cliff-aware greedy                    4,909,741      +220,582
+5. optimized (coord ascent)              5,405,554      +716,394
+
+Optimized conversion path (nonzero years):
+  2026 (age 60): conv=  355,000  MAGI=  381,831  subsidy=      0  IRMAA=     0  fed=  67,712
+  2027 (age 61): conv=   65,000  MAGI=   81,612  subsidy= 14,471  IRMAA=     0  fed=   3,440
+  2028 (age 62): conv=  120,000  MAGI=  137,807  subsidy=      0  IRMAA=     0  fed=  11,046
+  2029 (age 63): conv=  605,000  MAGI=  634,573  subsidy=      0  IRMAA=     0  fed= 143,578
+  2030 (age 64): conv=  310,000  MAGI=  347,932  subsidy=      0  IRMAA=     0  fed=  60,314
+  2031 (age 65): conv=        0  MAGI=   85,330  subsidy=      0  IRMAA= 6,355  fed=   5,682
+  2032 (age 66): conv=        0  MAGI=   84,277  subsidy=  7,103  IRMAA= 4,620  fed=   5,555
+  2038 (age 72): conv=   10,000  MAGI=   79,095  subsidy=      0  IRMAA=     0  fed=     198
+  2039 (age 73): conv=   10,000  MAGI=   78,953  subsidy=      0  IRMAA=     0  fed=     229
+  2040 (age 74): conv=   10,000  MAGI=   78,816  subsidy=      0  IRMAA=     0  fed=     259
+  2041 (age 75): conv=   15,000  MAGI=   84,383  subsidy=      0  IRMAA=     0  fed=   1,343
+  2042 (age 76): conv=    8,500  MAGI=   77,738  subsidy=      0  IRMAA=     0  fed=     166
+  2043 (age 77): conv=   10,000  MAGI=   78,562  subsidy=      0  IRMAA=     0  fed=     370
+  2044 (age 78): conv=   10,000  MAGI=   78,444  subsidy=      0  IRMAA=     0  fed=     399
+  2045 (age 79): conv=   10,000  MAGI=   78,312  subsidy=      0  IRMAA=     0  fed=     424
+  2046 (age 80): conv=    9,000  MAGI=   77,516  subsidy=      0  IRMAA=     0  fed=     324
+  2047 (age 81): conv=    9,500  MAGI=   77,670  subsidy=      0  IRMAA=     0  fed=     400
+  2048 (age 82): conv=   10,000  MAGI=   77,886  subsidy=      0  IRMAA=     0  fed=     485
+  2049 (age 83): conv=   10,000  MAGI=   77,722  subsidy=      0  IRMAA=     0  fed=     499
+  2050 (age 84): conv=    5,000  MAGI=   74,903  subsidy=      0  IRMAA=     0  fed=      21
+  2051 (age 85): conv=    5,000  MAGI=   74,798  subsidy=      0  IRMAA=     0  fed=      44
+  2052 (age 86): conv=    5,000  MAGI=   74,696  subsidy=      0  IRMAA=     0  fed=      66
+  2053 (age 87): conv=    5,000  MAGI=   74,596  subsidy=      0  IRMAA=     0  fed=      88
+
+Heir-rate sensitivity (re-optimized per rate):
+heir rate          no-conv        greedy       optimal  opt-greedy gap
+0%               5,144,126     4,909,741     5,407,286        +497,545
+12%              4,916,643     4,909,741     5,406,420        +496,679
+24%              4,689,159     4,909,741     5,405,554        +495,813
+32%              4,537,504     4,909,741     5,404,976        +495,235
+
+=== West Virginia high-premium sensitivity (premium=$44,000) ===
+policy                          estate@90 (real $)    vs no-conv
+1. no conversion                         4,702,700            +0
+4. cliff-aware greedy                    4,757,807       +55,107
+5. optimized (coord ascent)              5,270,423      +567,723
+
+WV optimal-vs-greedy gap: +512,616
+
+=== 2026-07-06 rescore: Owl benchmark under corrected 12%->22% MFJ bracket boundary ($99,600 -> $100,800) ===
+Owl-optimal conversion schedule (real 2026$, from /tmp/owl_conv_real.npy), scored in fixed scenario_a.py engine:
+  Owl schedule score:            5,015,104
+  Our optimum (unchanged):       5,405,554
+  New Owl gap (optimum - Owl):     390,450   (was $321k under the old, buggy bracket boundary)
+  No-conversion baseline (sanity check, unchanged): 4,689,159
+WV optimal conversion path (nonzero years):
+  2026 (age 60): conv=  315,000  MAGI=  343,034  subsidy=      0
+  2027 (age 61): conv=   65,000  MAGI=   81,385  subsidy= 35,894
+  2028 (age 62): conv=  120,000  MAGI=  139,738  subsidy=      0
+  2029 (age 63): conv=  605,000  MAGI=  636,082  subsidy=      0
+  2030 (age 64): conv=  310,000  MAGI=  394,610  subsidy=      0
+  2038 (age 72): conv=   10,000  MAGI=   79,095  subsidy=      0
+  2039 (age 73): conv=   10,000  MAGI=   78,953  subsidy=      0
+  2040 (age 74): conv=   10,000  MAGI=   78,816  subsidy=      0
+  2041 (age 75): conv=   15,000  MAGI=   84,382  subsidy=      0
+  2042 (age 76): conv=    8,500  MAGI=   77,738  subsidy=      0
+  2043 (age 77): conv=   10,000  MAGI=   78,561  subsidy=      0
+  2044 (age 78): conv=   10,000  MAGI=   78,443  subsidy=      0
+  2045 (age 79): conv=   10,000  MAGI=   78,312  subsidy=      0
+  2046 (age 80): conv=    9,000  MAGI=   77,516  subsidy=      0
+  2047 (age 81): conv=    9,500  MAGI=   77,670  subsidy=      0
+  2048 (age 82): conv=   10,000  MAGI=   77,886  subsidy=      0
+  2049 (age 83): conv=   10,000  MAGI=   77,721  subsidy=      0
+  2050 (age 84): conv=    5,000  MAGI=   74,903  subsidy=      0
+  2051 (age 85): conv=    5,000  MAGI=   74,798  subsidy=      0
+  2052 (age 86): conv=    5,000  MAGI=   74,696  subsidy=      0
+  2053 (age 87): conv=    5,000  MAGI=   74,596  subsidy=      0

@@ -1,0 +1,7 @@
+numpy
+matplotlib
+jupyter
+
+# Optional, only needed to run the two validation/benchmark scripts:
+# owlplanner        (for benchmark_owl.py)
+# policyengine-us   (for validate_policyengine.py)
