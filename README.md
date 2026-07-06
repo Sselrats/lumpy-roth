@@ -56,7 +56,8 @@ Here is the optimal schedule (elder spouse's age; all real 2026 dollars):
 | 2028 | 62 | $120,000 | $138k | $0 | sacrifices the credit for cheap 12% space |
 | 2029 | 63 | $605,000 | $635k | $0 | the big one, before the IRMAA lookback window |
 | 2030 | 64 | $310,000 | $348k | $0 | finishes the job |
-| 2031–32 | 65–66 | $0 | ~$85k | partial | absorbs one low IRMAA tier for two years |
+| 2031 | 65 | $0 | $85k | $0 | forced income lands $730 over the cliff; also eats the first IRMAA tier |
+| 2032 | 66 | $0 | $84k | $7,100 | back under the cliff; second IRMAA year |
 | 2038+ | 72+ | ~$10k/yr | ~$78k | — | mop-up under the SS tax hump |
 
 ![Optimal 30-year timeline showing MAGI versus the ACA cliff line, with three large conversion spikes and near-zero years in between](charts/chart2_optimal_timeline.png)
